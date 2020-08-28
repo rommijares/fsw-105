@@ -4,7 +4,7 @@ if ( 5>3 ) {
     console.log ('is greater than')
 };
 
-if ( 'cat' === 3 ) {
+if ( 'cat'.length === 3 ) {
     console.log ('is the length')
 };
 
@@ -19,8 +19,7 @@ else {
 
 var person = {
     name: 'Bobby',
-    age: 12,
-    firstLetterOfName: 'B'
+    age: 12
 };
 
 if ( person.age >= 18 ) {
@@ -30,14 +29,14 @@ else {
     console.log (person.name + ' ' + 'is not allowed')
 };
 
-if (person.firstLetterOfName = 'B') {
+if ( person.name.charAt(0) === 'B') {
     console.log (person.name + ' ' + 'is allowed')
 } 
 else {
     console.log (person.name + ' ' + 'is not allowed')
 };
 
-if ( person.firstLetterOfName = 'B' && person.age >= 18 ) {
+if ( person.name.charAt(0) === 'B' && person.age >= 18 ) {
     console.log ( person.name + ' ' + 'is allowed')
 } 
 else {
@@ -58,13 +57,16 @@ else {
 
 if ( 1<= 2 && 2 == 4 ) {
     console.log ('yes')
-};
+}
+else {
+    console.log ('no')
+}
 
 // Gold Medal
 
 console.log ( typeof 'dog' === 'string' ? 'is a string' : 'is not a string');
 
-console.log ( typeof 'true' === 'boolean' ? 'is a boolean' : 'is not a boolean');
+console.log ( typeof true === 'boolean' ? 'is a boolean' : 'is not a boolean');
 
 var example;
 console.log ( typeof example === 'undefined' ? 'is undefined' : 'is defined');
