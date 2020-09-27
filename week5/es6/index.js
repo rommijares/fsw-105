@@ -1,14 +1,14 @@
 // #1
-let name = "John"
+const owner = "John"
 let age = 101 
 
 function runForLoop(pets) {
-    let petObjects = []
+    const petObjects = []
     for (let i = 0; i< pets.length; i++) {
-        const pet = { type: pets[i] }
-        name;
-        if (pet[i] === "cat") {
-            name === "fluffy"
+        let pet = { type: pets[i] } 
+        
+        if (pets[i] === "cat") {
+            name = "fluffy"
         } else {
             name = "spot"
         }
@@ -16,7 +16,7 @@ function runForLoop(pets) {
         pet.name = name
         petObjects.push(pet)
     }
-    console.log("man name: ", name)
+    console.log("man name: ", owner)
     return petObjects
 }
 
@@ -61,23 +61,25 @@ console.log(filterForFriendly(people))
 
 
 // #4
-let doMathSum = (a,b) => a*b
+let doMathSum = (a,b) => a+b
+    console.log(doMathSum(6,5))
 
 let produceProduct = (a,b) => a*b
+    console.log(produceProduct(8,8))
 
 
 // #5
 let printString = (firstName = "Jane", lastName= "Doe", age = 100) =>
      "Hi " + firstName + " " + lastName + " , how does it feel to be " + age
 
-console.log(printString())
+console.log(printString('Kat','Stark',40))
 
 
 // #6
-let printString = (firstName = "Jane", lastName= "Doe", age = 100) =>
+let repeatPrintString = (firstName = "Jane", lastName= "Doe", age = 100) =>
      `Hi ${firstName} ${lastName}, how does it feel to be ${age}`
 
-console.log(printString())
+console.log(repeatPrintString('Kat','Stark', 40))
 
 
 // #7
